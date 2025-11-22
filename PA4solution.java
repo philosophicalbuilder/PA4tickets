@@ -67,6 +67,12 @@ public class PA4solution {
          * 
          */
 
+        int[] uva_array = uva_array(input);
+        int[] vt_array = vt_array(input);
+        int[] uva_kadane = kadane(uva_array);
+        int[] vt_kadane = kadane(vt_array);
+        int[] who_wins = who_wins(uva_kadane, vt_kadane);
+
     }
 
     public static int[] uva_array(String input) {
@@ -96,15 +102,26 @@ public class PA4solution {
         return arr;
     }
 
-    public static int[] who_wins(int[] arr) {
+    public static void who_wins(int[] team1, int[] team2) {
 
-        /*
-        when we pass both results from uva and vt (that were filtered through Kadane's)
-        we need to determine who wins. 
-        if the first elem of that result array from one is greater than the other, that team won. 
-        So check for both uva and vt that condition. Print that. 
-        
-        */
+        if (team1[0] > team2[0]) {
+            System.out.println("UVA");
+        } else {
+            System.out.println("VT");
+        }
+    }
+
+    /*
+     * when we pass both results from uva and vt (that were filtered through
+     * Kadane's)
+     * we need to determine who wins.
+     * if the first elem of that result array from one is greater than the other,
+     * that team won.
+     * So check for both uva and vt that condition. Print that.
+     * 
+     * 
+     * 
+     */
 
     /*
      * My solution to the Maximum Subarray Sum problem in 2023 adapted for this
