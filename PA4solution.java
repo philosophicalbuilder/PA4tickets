@@ -198,11 +198,13 @@ public class PA4solution {
                 bestStart = currentStart;
                 bestEnd = i;
             }
-            result[0] = maxSum;
-            result[1] = bestStart;
-            result[2] = bestEnd;
+
         }
+        result[0] = maxSum;
+        result[1] = bestStart;
+        result[2] = bestEnd;
         return result;
+
     }
 
 }
