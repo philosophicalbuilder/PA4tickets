@@ -160,7 +160,9 @@ public class PA4solution {
 
     public static int[] kadane(int[] nums) {
 
-        // getting tie for BBmmBmmBmB..
+        /*
+         * main test cases pass - edge cases?
+         */
         int[] result = new int[3];
         int currentSum = nums[0];
         int maxSum = nums[0];
