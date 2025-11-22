@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 public class PA4solution {
     /*
      * 
@@ -46,7 +48,6 @@ public class PA4solution {
      * 
      * 
      */
-    import java.util.Scanner;
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
