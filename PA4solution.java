@@ -37,7 +37,14 @@ public class PA4solution {
      * }
      * 
      * 
+     * Plan is to have a running score for a particular team -
+     * +1 if the team's letter is encountered, -1 if the other team's letter is
+     * encountered.
+     * and from that point - use Kadane's algorithim to find the maximum score
+     * difference.
+     * 
      * 
      * 
      */
+
 }
