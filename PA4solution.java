@@ -44,7 +44,23 @@ public class PA4solution {
      * difference.
      * 
      * 
-     * 
      */
+
+    import java.util.Scanner;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the input: ");
+        String input = sc.nextLine();
+
+        /*
+        I'll have to "funnel" the input into a helper array that maps the string to an array of (+1/-1). 
+        However, one array can't handle both. We need to assume the side of one team, one at a time. 
+        So there will be an array where when we see B (blue) we get a +1 and m is -1. 
+        And there will be an array where when we see B, we get a -1 and m is +1. (flipped)
+        Then we can pass each of those numerical arrays to Kadane's to generate two results and start / end indicies of their best performance. 
+        
+        
+        */
+    }
 
 }
