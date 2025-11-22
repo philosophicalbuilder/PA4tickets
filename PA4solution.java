@@ -71,7 +71,7 @@ public class PA4solution {
         int[] vt_array = vt_array(input);
         int[] uva_kadane = kadane(uva_array);
         int[] vt_kadane = kadane(vt_array);
-        int[] who_wins = who_wins(uva_kadane, vt_kadane);
+        who_wins(uva_kadane, vt_kadane);
 
     }
 
@@ -106,8 +106,18 @@ public class PA4solution {
 
         if (team1[0] > team2[0]) {
             System.out.println("UVA");
-        } else {
+            // getting the result.
+            // need to offset by 1 to get the correct index of the first element of the
+            // original array.
+            System.out.println(team1[1] + 1 + " " + (team1[2] + 1));
+
+        } else if (team2[0] > team1[0]) {
             System.out.println("VT");
+            System.out.println(team2[1] + 1 + " " + (team2[2] + 1));
+        } else {
+            System.out.println("TIE");
+            System.out.println(team1[1] + 1 + " " + (team1[2] + 1));
+            System.out.println(team2[1] + 1 + " " + (team2[2] + 1));
         }
     }
 
