@@ -78,4 +78,19 @@ public class PA4solution {
         return arr;
     }
 
+    public static int[] vt_array(String input) {
+        int[] arr = new int[input.length()]; 
+
+        for(int i = 0; i < input.length(); i++) {
+            if(input.charAt(i) == 'm') {
+                arr[i] = 1; 
+            } else {
+                arr[i] = -1;
+            }
+        }
+        return arr;
+    }
+
+
+
 }
