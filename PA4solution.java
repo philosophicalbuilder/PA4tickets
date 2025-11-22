@@ -136,8 +136,22 @@ public class PA4solution {
             if (num > currentSum + num) {
                 currentSum = num;
                 currentStart = i;
+            } else {
+                currentSum -= num;
             }
+
+            if (currentSum > maxSum) {
+                maxSum = currentSum;
+                bestStart = currentStart;
+                bestEnd = i;
+            }
+
+            int[] result = new int[3];
+            result[0] = maxSum;
+            result[1] = bestStart;
+            result[2] = bestEnd;
         }
+        return result;
 
     }
 
