@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class PA4solution {
+public class PA4 {
     /*
      * 
      * At first, to me, this looks like a sliding window problem. However, on second
@@ -51,7 +51,6 @@ public class PA4solution {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the input: ");
 
         /*
          * input will always be non-empty
@@ -114,7 +113,7 @@ public class PA4solution {
     public static void who_wins(int[] team1, int[] team2) {
 
         if (team1[0] > team2[0]) {
-            System.out.println("UVA");
+            System.out.println("UVa");
             // getting the result.
             // need to offset by 1 to get the correct index of the first element of the
             // original array.
