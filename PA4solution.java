@@ -121,4 +121,11 @@ public class PA4solution {
      * 
      */
 
+    public static int[] kadane(int[] nums) {
+
+        int[] currentSum = nums[0]; 
+        int maxSum = nums[0]
+
+    }
+
 }
