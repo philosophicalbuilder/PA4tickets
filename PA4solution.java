@@ -52,6 +52,15 @@ public class PA4solution {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the input: ");
+
+        /*
+         * input will always be non-empty
+         * will only be B and m.
+         * so no invalid chars / mixed case.
+         * no sanitization or anything like that.
+         * 
+         */
+
         String input = sc.nextLine();
 
         /*
@@ -162,6 +171,7 @@ public class PA4solution {
 
         /*
          * main test cases pass - edge cases?
+         * BmBm (tie works).
          */
         int[] result = new int[3];
         int currentSum = nums[0];
