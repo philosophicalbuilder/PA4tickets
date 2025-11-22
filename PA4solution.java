@@ -175,7 +175,7 @@ public class PA4solution {
                 currentSum = num;
                 currentStart = i;
             } else {
-                currentSum -= num;
+                currentSum += num;
             }
 
             if (currentSum > maxSum) {
