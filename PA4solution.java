@@ -169,7 +169,7 @@ public class PA4solution {
         int bestStart = 0;
         int bestEnd = 0;
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
 
             int num = nums[i];
             if (num > currentSum + num) {
