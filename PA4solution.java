@@ -169,6 +169,8 @@ public class PA4solution {
 
     public static int[] kadane(int[] nums) {
 
+        // if only "B" , output should say UVA but I'm seeing TIE.
+
         /*
          * main test cases pass - edge cases?
          * BmBm (tie works).
