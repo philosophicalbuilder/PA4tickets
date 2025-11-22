@@ -123,6 +123,7 @@ public class PA4solution {
 
     public static int[] kadane(int[] nums) {
 
+        return result;
         int currentSum = nums[0];
         int maxSum = nums[0];
 
@@ -151,7 +152,7 @@ public class PA4solution {
             result[1] = bestStart;
             result[2] = bestEnd;
         }
-        return result;
+       
 
     }
 
