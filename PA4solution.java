@@ -96,6 +96,16 @@ public class PA4solution {
         return arr;
     }
 
+    public static int[] who_wins(int[] arr) {
+
+        /*
+        when we pass both results from uva and vt (that were filtered through Kadane's)
+        we need to determine who wins. 
+        if the first elem of that result array from one is greater than the other, that team won. 
+        So check for both uva and vt that condition. Print that. 
+        
+        */
+
     /*
      * My solution to the Maximum Subarray Sum problem in 2023 adapted for this
      * problem.
