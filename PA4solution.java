@@ -59,8 +59,23 @@ public class PA4solution {
         And there will be an array where when we see B, we get a -1 and m is +1. (flipped)
         Then we can pass each of those numerical arrays to Kadane's to generate two results and start / end indicies of their best performance. 
         
-        
         */
+
+    }
+
+
+    public static int[] uva_array(String input) {
+
+        int[] arr = new int[input.length()]; 
+
+        for(int i = 0; i < input.length(); i++) {
+            if(input.charAt(i) == 'B') {
+                arr[i] = 1;
+            } else {
+                arr[i] = -1;
+            }
+        }
+        return arr;
     }
 
 }
